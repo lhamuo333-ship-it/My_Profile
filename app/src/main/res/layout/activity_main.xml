@@ -17,10 +17,10 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:layout_marginLeft="30dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
         android:text="Student Profile Application"
-        android:textSize="24sp"
+        android:textSize="20sp"
         android:textStyle="bold" />
 
     <ImageView
@@ -28,15 +28,15 @@
         android:layout_width="120dp"
         android:layout_height="120dp"
         android:layout_gravity="center"
-        android:layout_marginBottom="15dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
         android:src="@drawable/img" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginTop="3dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -46,20 +46,26 @@
             android:text="Full Name:"
             android:textSize="15sp"
             android:textStyle="bold" />
-
-        <TextView
+        <EditText
+            android:id="@+id/editTextText"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
             android:text="Rinzin Lhamo"
             android:textSize="15sp" />
+
+
+
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="3dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -70,19 +76,22 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <TextView
+        <EditText
+            android:id="@+id/editTextNumber"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="02240168"
-            android:textSize="15sp" />
+            android:ems="10"
+            android:inputType="number"
+            android:text="02240168"/>
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="3dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -92,20 +101,24 @@
             android:text="Program:"
             android:textSize="15sp"
             android:textStyle="bold" />
-
-        <TextView
+        <EditText
+            android:id="@+id/editTextProgram"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
             android:text="Information Technology"
             android:textSize="15sp" />
+
+
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="3dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -116,11 +129,14 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <TextView
+        <EditText
+            android:id="@+id/editTextDepartment"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Computing Technologies"
+            android:ems="10"
+            android:inputType="text"
+            android:text="ComputingTechnologies"
             android:textSize="15sp" />
 
     </LinearLayout>
@@ -128,7 +144,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="3dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -139,10 +155,13 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <TextView
+        <EditText
+            android:id="@+id/editTextSemester"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:ems="10"
+            android:inputType="text"
             android:text="Fifth"
             android:textSize="15sp" />
 
@@ -151,7 +170,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="3dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -162,19 +181,24 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <TextView
+
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="lhamuo333@gmail.com"
-            android:textSize="15sp" />
+            android:ems="10"
+            android:textSize="15sp"
+            android:inputType="textEmailAddress"
+            android:text="lhamuo333@gmail.com"/>
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="6dp"
+        android:layout_marginBottom="3dp"
         android:orientation="horizontal"
         android:padding="8dp">
 
@@ -185,10 +209,14 @@
             android:textSize="15sp"
             android:textStyle="bold" />
 
-        <TextView
+
+        <EditText
+            android:id="@+id/editTextPhone"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:ems="10"
+            android:inputType="phone"
             android:text="77807138"
             android:textSize="15sp" />
 
@@ -197,15 +225,14 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:orientation="horizontal"
-        >
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
 
         <Button
             android:id="@+id/saveBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="20dp"
+            android:layout_marginEnd="4dp"
             android:layout_weight="1"
             android:backgroundTint="#2196F3"
             android:text="Save" />
@@ -214,8 +241,8 @@
             android:id="@+id/clearBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="3dp"
-            android:layout_marginEnd="3dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginEnd="4dp"
             android:layout_weight="1"
             android:backgroundTint="#78909C"
             android:text="Clear" />
@@ -224,7 +251,7 @@
             android:id="@+id/editBtn"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="6dp"
+            android:layout_marginStart="4dp"
             android:layout_weight="1"
             android:backgroundTint="@color/black"
             android:text="Edit" />
